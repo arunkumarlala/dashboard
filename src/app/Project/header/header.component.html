@@ -1,0 +1,8 @@
+<p>header works!</p>
+
+<div *ngIf="getsessitem()=='false'">
+  <app-login></app-login>
+</div>
+<div *ngIf="getsessitem()=='true'">
+  <app-logout></app-logout>
+</div>

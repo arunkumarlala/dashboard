@@ -1,0 +1,28 @@
+<p>signin works!</p>
+{{userName}}
+{{mobile}}
+{{isActive}}
+{{address}}
+{{wordcount}}
+{{showwordcount()}}
+{{items}}
+<input type="text" name="userName" id="userName" [(ngModel)]="userName" (keyup)="wordcount=userName.length"  />
+<div *ngIf="wordcount>5">
+  Greater than 5
+</div>
+<div *ngFor="let item of items">
+  {{item}}
+  </div>
+Day
+<select >
+  <option *ngFor=" let num of [].constructor(31);let i = index">
+    {{i+1}}
+  </option>
+</select>
+
+fruits
+<select>
+  <option *ngFor="let item of items">
+    {{item}}
+  </option>
+</select>
